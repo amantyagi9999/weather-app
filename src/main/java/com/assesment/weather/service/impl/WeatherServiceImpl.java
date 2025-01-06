@@ -29,8 +29,8 @@ public class WeatherServiceImpl implements WeatherService {
         this.restTemplate = restTemplate;
     }
 
-    @Cacheable(value = "weather", key = "#city", unless = "#result == null")
-    @CircuitBreaker(name = "weatherService", fallbackMethod = "getFromOpenWeatherMap")
+    @Cacheable("myCache")
+   @CircuitBreaker(name = "weatherService", fallbackMethod = "getFromOpenWeatherMap")
     public WeatherResponse getWeather(String city) {
         try {
             logger.debug("Enter in WeatherStack...");
