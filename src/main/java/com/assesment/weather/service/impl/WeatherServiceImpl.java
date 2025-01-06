@@ -1,6 +1,5 @@
 package com.assesment.weather.service.impl;
 
-import com.assesment.weather.controller.WeatherController;
 import com.assesment.weather.model.OpenWeatherMapResponse;
 import com.assesment.weather.model.WeatherResponse;
 import com.assesment.weather.model.WeatherStackResponse;
