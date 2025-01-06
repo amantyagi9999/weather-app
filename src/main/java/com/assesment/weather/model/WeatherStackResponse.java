@@ -38,4 +38,11 @@ public class WeatherStackResponse {
     public void setCurrent(Current current) {
         this.current = current;
     }
+
+    @Override
+    public String toString() {
+        return "WeatherStackResponse{" +
+                "current=" + current +
+                '}';
+    }
 }

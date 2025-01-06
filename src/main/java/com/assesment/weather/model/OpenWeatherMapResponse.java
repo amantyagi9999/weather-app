@@ -1,13 +1,6 @@
 package com.assesment.weather.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-
-@Getter
-@Setter
-@Data
 public class OpenWeatherMapResponse {
 
     // Nested class to represent "Main" section
@@ -22,6 +15,13 @@ public class OpenWeatherMapResponse {
         public void setTemp(double temp) {
             this.temp = temp;
         }
+
+        @Override
+        public String toString() {
+            return "Main{" +
+                    "temp=" + temp +
+                    '}';
+        }
     }
 
     // Nested class to represent "wind" section
@@ -35,6 +35,13 @@ public class OpenWeatherMapResponse {
 
         public void setSpeed(double speed) {
             this.speed = speed;
+        }
+
+        @Override
+        public String toString() {
+            return "Wind{" +
+                    "speed=" + speed +
+                    '}';
         }
     }
 
@@ -67,6 +74,14 @@ public class OpenWeatherMapResponse {
 
     public double getSpeed() {
         return wind != null ? wind.getSpeed() : 0;
+    }
+
+    @Override
+    public String toString() {
+        return "OpenWeatherMapResponse{" +
+                "main=" + main +
+                ", wind=" + wind +
+                '}';
     }
 }
 
