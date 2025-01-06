@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class WeatherResponse {
 
-    @JsonProperty(" temperature_degrees")
+    @JsonProperty("temperature_degrees")
     private double temperature;
     @JsonProperty("wind_speed")
     private double windSpeed;

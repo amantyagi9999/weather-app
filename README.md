@@ -15,7 +15,7 @@ This is a Spring Boot project built using Java and Maven to provide weather upda
 
 1. Clone the project repository to your local machine using Git.
 2. Import the project in any IDE via locating `pom.xml` file.
-2. Run `mvn clean package` to build the project.
+3. Run `mvn clean package` to build the project.
 
 ### Running the Project
 
@@ -29,3 +29,14 @@ You can set environment variables in `application.properties` file, for example,
 
 * Check the Console logs for errors.
 * If you're using an IDE, make sure to configure the project correctly and try running the application from the IDE.
+
+## What can be improved if i had additional time on task
+1. I could have implemented `SWAGGER`/`OPENAPI` for API documentation.
+2. I could have implemented `Mockito` for unit Testing.
+3. I could have implemented `Spring Security` to secure the API based on user authentication/authorization.
+4. Currently default logging is implemented provided by spring. I can implement `SLF4J`/`LOG4J2`/`LOG4J` for logging using `Spring AOP`.
+5. Current default caching is implemented provided by spring. I can enhance caching by using `Redis`.
+6. I can implement Input validation using `Spring Validation`.
+7. Currently using `REST TEMPLATE` to call the third party API. I could have implemented this using `Feign Client`.
+8. 
+8. 
